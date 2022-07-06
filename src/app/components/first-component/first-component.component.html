@@ -1,0 +1,9 @@
+<h2>Hello, {{ name }}</h2>
+<ul>
+  <li
+    *ngFor="let movie of Movies; let first = first; let last = last"
+    [ngClass]="{ first: first, last: last }"
+  >
+    {{ movie.name }}
+  </li>
+</ul>
