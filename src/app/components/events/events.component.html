@@ -1,1 +1,9 @@
-<p>events works!</p>
+<div>
+  <div>
+    <p *ngIf="show; else notFound">Apareci!</p>
+    <ng-template #notFound>
+      <p>Sumi!</p>
+    </ng-template>
+  </div>
+  <button (click)="showMessage()">Clique Aqui</button>
+</div>
